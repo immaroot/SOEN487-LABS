@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ca.concordia</groupId>
-    <artifactId>SOEN487-LAB2</artifactId>
+    <artifactId>SOEN487-LAB3</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>SOEN487-LAB2</name>
+    <name>SOEN487-LAB3</name>
 
     <dependencyManagement>
         <dependencies>
