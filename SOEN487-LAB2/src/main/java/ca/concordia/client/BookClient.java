@@ -2,6 +2,7 @@ package ca.concordia.client;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPut;
@@ -23,7 +24,7 @@ public class BookClient {
 
             ResponseHandler<String> responseHandler = new BookClientResponseHandler();
 
-            result = client.execute(httpGet, responseHandler);
+            result = client.execute(httpGet, httpResponse -> EntityUtils.toString(httpResponse.getEntity()));
 
         } catch (IOException e) {
             e.printStackTrace();
