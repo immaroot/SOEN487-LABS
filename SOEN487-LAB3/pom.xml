@@ -94,7 +94,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>ca.concordia.rest.Main</mainClass>
+                    <mainClass>Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>

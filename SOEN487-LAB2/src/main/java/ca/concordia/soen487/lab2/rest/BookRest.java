@@ -1,4 +1,4 @@
-package ca.concordia.rest;
+package ca.concordia.soen487.lab2.rest;
 
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;

@@ -1,4 +1,4 @@
-package ca.concordia.rest;
+package ca.concordia.soen487.lab3.rest;
 
 import jakarta.ws.rs.*;
 

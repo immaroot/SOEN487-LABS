@@ -1,4 +1,4 @@
-package ca.concordia.rest;
+package ca.concordia.soen487.lab3.rest;
 
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;

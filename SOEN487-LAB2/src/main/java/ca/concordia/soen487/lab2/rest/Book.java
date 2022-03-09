@@ -1,38 +1,17 @@
-package ca.concordia.rest;
-
-import jakarta.xml.bind.annotation.XmlAccessType;
-import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlRootElement;
+package ca.concordia.soen487.lab2.rest;
 
 import java.util.Objects;
 
-@XmlRootElement(name = "book")
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Book {
 
-    @XmlElement
     private String title;
-
-    @XmlElement
     private String author;
-
-    @XmlElement
     private String isbn;
-
-    public Book() {
-    }
 
     public Book(String title, String author, String isbn) {
         this.title  = title;
         this.author = author;
         this.isbn   = isbn;
-    }
-
-    public Book(Book book) {
-        this.title  = book.getTitle();
-        this.author = book.getAuthor();
-        this.isbn   = book.getIsbn();
     }
 
     public String getTitle() {

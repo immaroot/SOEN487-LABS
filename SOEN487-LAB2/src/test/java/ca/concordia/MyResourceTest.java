@@ -1,6 +1,6 @@
 package ca.concordia;
 
-import ca.concordia.rest.Main;
+import ca.concordia.soen487.lab2.rest.Main;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.WebTarget;

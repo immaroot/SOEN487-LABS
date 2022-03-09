@@ -1,4 +1,4 @@
-package ca.concordia.client;
+package ca.concordia.soen487.lab3.client;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
