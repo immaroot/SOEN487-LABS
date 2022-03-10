@@ -78,7 +78,7 @@
                     </wsdlUrls>
                     <packageName>ca.concordia.soen487.lab5.client.generated</packageName>
                     <keep>true</keep>
-                    <sourceDestDir>src/main/java/ca/concordia/soen487/lab5/client</sourceDestDir>
+                    <sourceDestDir>src/main/java/</sourceDestDir>
                 </configuration>
             </plugin>
         </plugins>

@@ -78,7 +78,7 @@ public class BookRest {
 
     private boolean validateToken(String token) {
         try (CloseableHttpClient client = HttpClients.createDefault()) {
-            HttpPost httpPost = new HttpPost("https:/localhost:8443/user/auth");
+            HttpPost httpPost = new HttpPost("http://localhost:8080/user/auth");
             httpPost.addHeader("x-api-key", token);
             CloseableHttpResponse response = client.execute(httpPost);
             HttpEntity entity = response.getEntity();

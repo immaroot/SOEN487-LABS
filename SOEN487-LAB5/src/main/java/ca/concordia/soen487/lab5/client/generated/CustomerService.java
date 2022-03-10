@@ -78,6 +78,21 @@ public interface CustomerService {
 
     /**
      * 
+     * @param id
+     * @throws CustomerNotFound_Exception
+     */
+    @WebMethod
+    @Action(input = "http://concordia.ca/soen487/CustomerService/deleteCustomerRequest", output = "http://concordia.ca/soen487/CustomerService/deleteCustomerResponse", fault = {
+        @FaultAction(className = CustomerNotFound_Exception.class, value = "http://concordia.ca/soen487/CustomerService/deleteCustomer/Fault/CustomerNotFound")
+    })
+    public void deleteCustomer(
+        @WebParam(name = "id", partName = "id")
+        int id)
+        throws CustomerNotFound_Exception
+    ;
+
+    /**
+     * 
      * @param file
      * @param mime
      * @param id
@@ -94,21 +109,6 @@ public interface CustomerService {
         byte[] file,
         @WebParam(name = "mime", partName = "mime")
         String mime);
-
-    /**
-     * 
-     * @param id
-     * @throws CustomerNotFound_Exception
-     */
-    @WebMethod
-    @Action(input = "http://concordia.ca/soen487/CustomerService/deleteCustomerRequest", output = "http://concordia.ca/soen487/CustomerService/deleteCustomerResponse", fault = {
-        @FaultAction(className = CustomerNotFound_Exception.class, value = "http://concordia.ca/soen487/CustomerService/deleteCustomer/Fault/CustomerNotFound")
-    })
-    public void deleteCustomer(
-        @WebParam(name = "id", partName = "id")
-        int id)
-        throws CustomerNotFound_Exception
-    ;
 
     /**
      * 
