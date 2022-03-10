@@ -24,6 +24,7 @@ public class UserRest {
 
     @POST
     @Path("/login")
+    @Produces("application/json")
     public Response login(@FormParam("username") String username, @FormParam("password") String password) {
         User user = users.stream()
                 .filter(u -> u.getUsername().equals(username))
@@ -51,7 +52,6 @@ public class UserRest {
 
     @POST
     @Path("/logout")
-    @Produces("application/json")
     public String logout(@FormParam("username") String username) {
         User user = users.stream()
                 .filter(u -> u.getUsername().equals(username))
